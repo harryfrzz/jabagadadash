@@ -21,7 +21,7 @@ export default function Rules(){
                     
                     {/* Registration & Eligibility */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Registration & Eligibility
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -34,7 +34,7 @@ export default function Rules(){
 
                     {/* Event Dates & Venue */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Event Dates & Venue
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -46,7 +46,7 @@ export default function Rules(){
 
                     {/* Accommodation & Transportation */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Accommodation & Transportation
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -59,7 +59,7 @@ export default function Rules(){
 
                     {/* Event Rules & Participation */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Event Rules & Participation
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -71,7 +71,7 @@ export default function Rules(){
 
                     {/* Submissions & Event Conduct */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.5s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Submissions & Event Conduct
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -84,7 +84,7 @@ export default function Rules(){
 
                     {/* Code of Conduct */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Code of Conduct
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -97,7 +97,7 @@ export default function Rules(){
 
                     {/* Communication & Queries */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.7s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-jetbrains-mono">
                             Communication & Queries
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">

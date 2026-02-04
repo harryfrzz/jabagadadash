@@ -3,6 +3,8 @@
 import { Event } from './types';
 import { useState, useEffect } from 'react';
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
+import { MapPin } from 'lucide-react';
+import { CalendarDays } from 'lucide-react';
 
 interface EventCardProps {
   event: Event;
@@ -52,14 +54,14 @@ export default function EventCard({ event }: EventCardProps) {
         <div className="relative z-[2] flex flex-col sm:flex-row gap-2 sm:gap-3">
           {/* Event Details */}
           <div className="flex flex-col gap-2 sm:gap-3 flex-1">
-            <h2 className="text-[#efdb92] text-lg sm:text-xl md:text-2xl font-bold group-hover:text-[#f5e8b8] transition-colors duration-300 font-cormorant">{event.title}</h2>
+            <h2 className="text-[#efdb92] text-lg sm:text-xl md:text-2xl font-bold group-hover:text-[#f5e8b8] transition-colors duration-300 font-jetbrains-mono">{event.title}</h2>
             
             <div className="flex flex-col gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-400">
               <span className="flex items-center gap-1.5 sm:gap-2">
-                <span className="text-[#efdb92]">📍</span> {event.location}
+                <span className="text-[#efdb92]"><MapPin /></span> {event.location}
               </span>
               <span className="flex items-center gap-1.5 sm:gap-2">
-                <span className="text-[#efdb92]">📅</span> {new Date(event.date).toLocaleDateString('en-US', { 
+                <span className="text-[#efdb92]"><CalendarDays /></span> {new Date(event.date).toLocaleDateString('en-US', { 
                   month: 'long', 
                   day: 'numeric', 
                   year: 'numeric' 

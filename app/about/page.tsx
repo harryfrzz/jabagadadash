@@ -8,7 +8,7 @@ export default function AboutPage() {
     <Wrapper>
         <div className="min-h-screen bg-[#0a0a0a] px-8 py-16">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-center text-[#efdb92] text-5xl font-bold mb-20 tracking-tight animate-fade-in">
+        <h1 className="text-center text-[#efdb92] text-7xl font-bold mb-20 tracking-tight animate-fade-in font-cormorant">
           About
         </h1>
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
 
         {/* Location Section */}
         <section className="mb-24 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          <h2 className="text-[#efdb92] text-4xl font-bold mb-10 text-center">Location</h2>
+          <h2 className="text-[#efdb92] text-4xl font-bold mb-10 text-center font-jetbrains-mono">Location</h2>
           <div className="text-gray-300 text-lg leading-relaxed text-center space-y-1 mb-12">
             <p className="text-[#efdb92] font-semibold text-xl">Lalita Pratishthanam (LP) Campus</p>
             <p className="text-gray-400">Chinmaya Vishwa Vidyapeeth Global Campus</p>
@@ -48,11 +48,11 @@ export default function AboutPage() {
 
         {/* Contact Us Section */}
         <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-          <h2 className="text-[#efdb92] text-4xl font-bold mb-16 text-center">Contact Us</h2>
+          <h2 className="text-[#efdb92] text-4xl font-bold mb-16 text-center font-jetbrains-mono">Contact Us</h2>
           
           {/* Faculty Coordinators */}
           <div className="mb-16">
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center">Faculty Coordinators</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center font-jetbrains-mono">Faculty Coordinators</h3>
             <div className="flex justify-center gap-16 text-gray-300 flex-wrap">
               <div className="text-center">
                 <p className="font-medium text-lg mb-2">Dr. Rakhy K S</p>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
           {/* Student Coordinators */}
           <div className="mb-16">
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center">Student Coordinators</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center font-jetbrains-mono">Student Coordinators</h3>
             <div className="flex justify-center gap-12 text-gray-300 flex-wrap">
               <div className="text-center">
                 <p className="font-medium text-lg mb-2">Krishna K</p>
@@ -96,14 +96,14 @@ export default function AboutPage() {
 
           {/* Fest Heads */}
           <div>
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-12 text-center">Fest Heads</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-12 text-center font-jetbrains-mono">Fest Heads</h3>
             
             <div className="text-gray-300 max-w-6xl mx-auto">
               {/* Row 1: Management Fest and Tech Fest */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mb-12">
                 {/* Management Fest */}
                 <div className="text-center">
-                  <p className="text-[#efdb92] font-semibold text-xl mb-6">Management Fest</p>
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Management Fest</p>
                   <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Aditi Dev</p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
 
                 {/* Tech Fest */}
                 <div className="text-center">
-                  <p className="text-[#efdb92] font-semibold text-xl mb-6">Tech Fest</p>
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Tech Fest</p>
                   <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Muhammed Raiyan Najeem</p>
@@ -144,7 +144,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mb-12">
                 {/* Cultural Fest */}
                 <div className="text-center">
-                  <p className="text-[#efdb92] font-semibold text-xl mb-6">Cultural Fest</p>
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Cultural Fest</p>
                   <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Vividha Sadamast</p>
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
                 {/* Literary Fest */}
                 <div className="text-center">
-                  <p className="text-[#efdb92] font-semibold text-xl mb-6">Literary Fest</p>
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Literary Fest</p>
                   <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Shreya Baiju</p>
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
               {/* General Events - Full Width */}
               <div className="text-center">
-                <p className="text-[#efdb92] font-semibold text-xl mb-6">General Events</p>
+                <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">General Events</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
                   <div>
                     <p className="font-medium">Shabaz Sha S.S <span className="text-gray-500 text-sm">(Football)</span></p>
