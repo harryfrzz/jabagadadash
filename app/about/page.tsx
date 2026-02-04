@@ -1,3 +1,4 @@
+"use client";
 import Wrapper from "../components/wrapper";
 
 import CampusMap from "../components/mapView";
@@ -7,12 +8,12 @@ export default function AboutPage() {
     <Wrapper>
         <div className="min-h-screen bg-[#0a0a0a] px-8 py-16">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-center text-[#efdb92] text-6xl font-bold mb-20 tracking-tight">
+        <h1 className="text-center text-[#efdb92] text-7xl font-bold mb-20 tracking-tight animate-fade-in font-cormorant">
           About
         </h1>
 
         {/* About Section */}
-        <section className="mb-24">
+        <section className="mb-24 animate-slide-up" style={{ animationDelay: '0.1s' }}>
           <p className="text-gray-300 text-xl leading-loose text-center max-w-4xl mx-auto">
             <span className="text-[#efdb92] font-semibold text-2xl">Jabagadadash 6.0</span>, the sixth edition of CVV's International Inter-University Mega Fest,
             celebrates innovation, intellect, management excellence, creativity, and human understanding.
@@ -27,8 +28,8 @@ export default function AboutPage() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#efdb92] to-transparent mb-24"></div>
 
         {/* Location Section */}
-        <section className="mb-24">
-          <h2 className="text-[#efdb92] text-4xl font-bold mb-10 text-center">Location</h2>
+        <section className="mb-24 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-[#efdb92] text-4xl font-bold mb-10 text-center font-jetbrains-mono">Location</h2>
           <div className="text-gray-300 text-lg leading-relaxed text-center space-y-1 mb-12">
             <p className="text-[#efdb92] font-semibold text-xl">Lalita Pratishthanam (LP) Campus</p>
             <p className="text-gray-400">Chinmaya Vishwa Vidyapeeth Global Campus</p>
@@ -46,12 +47,12 @@ export default function AboutPage() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#efdb92] to-transparent mb-24"></div>
 
         {/* Contact Us Section */}
-        <section className="mb-16">
-          <h2 className="text-[#efdb92] text-4xl font-bold mb-16 text-center">Contact Us</h2>
+        <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <h2 className="text-[#efdb92] text-4xl font-bold mb-16 text-center font-jetbrains-mono">Contact Us</h2>
           
           {/* Faculty Coordinators */}
           <div className="mb-16">
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center">Faculty Coordinators</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center font-jetbrains-mono">Faculty Coordinators</h3>
             <div className="flex justify-center gap-16 text-gray-300 flex-wrap">
               <div className="text-center">
                 <p className="font-medium text-lg mb-2">Dr. Rakhy K S</p>
@@ -70,7 +71,7 @@ export default function AboutPage() {
 
           {/* Student Coordinators */}
           <div className="mb-16">
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center">Student Coordinators</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-8 text-center font-jetbrains-mono">Student Coordinators</h3>
             <div className="flex justify-center gap-12 text-gray-300 flex-wrap">
               <div className="text-center">
                 <p className="font-medium text-lg mb-2">Krishna K</p>
@@ -95,15 +96,15 @@ export default function AboutPage() {
 
           {/* Fest Heads */}
           <div>
-            <h3 className="text-[#efdb92] text-2xl font-semibold mb-12 text-center">Fest Heads</h3>
+            <h3 className="text-[#efdb92] text-2xl font-semibold mb-12 text-center font-jetbrains-mono">Fest Heads</h3>
             
-            <div className="text-gray-300 max-w-6xl mx-auto ">
+            <div className="text-gray-300 max-w-6xl mx-auto">
               {/* Row 1: Management Fest and Tech Fest */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mb-12">
                 {/* Management Fest */}
-                <div>
-                  <p className="text-[#efdb92] font-semibold text-xl mb-4 ml-15">Management Fest</p>
-                  <div className="flex gap-12 flex-wrap">
+                <div className="text-center">
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Management Fest</p>
+                  <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Aditi Dev</p>
                       <a href="tel:+919778278711" className="text-gray-400 hover:text-[#efdb92] transition-colors text-sm">
@@ -120,9 +121,9 @@ export default function AboutPage() {
                 </div>
 
                 {/* Tech Fest */}
-                <div>
-                  <p className="text-[#efdb92] font-semibold text-xl mb-4 ml-35">Tech Fest</p>
-                  <div className="flex gap-12 flex-wrap">
+                <div className="text-center">
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Tech Fest</p>
+                  <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Muhammed Raiyan Najeem</p>
                       <a href="tel:+918089510567" className="text-gray-400 hover:text-[#efdb92] transition-colors text-sm">
@@ -140,11 +141,11 @@ export default function AboutPage() {
               </div>
 
               {/* Row 2: Cultural Fest and Literary Fest */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mb-12">
                 {/* Cultural Fest */}
-                <div>
-                  <p className="text-[#efdb92] font-semibold text-xl mb-4 ml-19">Cultural Fest</p>
-                  <div className="flex gap-12 flex-wrap">
+                <div className="text-center">
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Cultural Fest</p>
+                  <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Vividha Sadamast</p>
                       <a href="tel:+919967843080" className="text-gray-400 hover:text-[#efdb92] transition-colors text-sm">
@@ -161,9 +162,9 @@ export default function AboutPage() {
                 </div>
 
                 {/* Literary Fest */}
-                <div >
-                  <p className="text-[#efdb92] font-semibold text-xl mb-4 ml-33">Literary Fest</p>
-                  <div className="flex gap-12 flex-wrap ml-12">
+                <div className="text-center">
+                  <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">Literary Fest</p>
+                  <div className="flex justify-center gap-8 flex-wrap">
                     <div>
                       <p className="font-medium">Shreya Baiju</p>
                       <a href="tel:+918075625563" className="text-gray-400 hover:text-[#efdb92] transition-colors text-sm">
@@ -181,9 +182,9 @@ export default function AboutPage() {
               </div>
 
               {/* General Events - Full Width */}
-              <div>
-                <p className="text-[#efdb92] font-semibold text-xl mb-4 ml-95">General Events</p>
-                <div className="grid grid-cols-4 gap-6">
+              <div className="text-center">
+                <p className="text-[#efdb92] font-semibold text-xl mb-6 font-jetbrains-mono">General Events</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
                   <div>
                     <p className="font-medium">Shabaz Sha S.S <span className="text-gray-500 text-sm">(Football)</span></p>
                     <a href="tel:+919745317135" className="text-gray-400 hover:text-[#efdb92] transition-colors text-sm">
@@ -215,6 +216,45 @@ export default function AboutPage() {
         </section>
       </div>
     </div>
+
+        {/* Animations */}
+        <style jsx>{`
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slide-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-fade-in {
+                animation: fade-in 1s ease-out forwards;
+            }
+
+            .animate-slide-up {
+                opacity: 0;
+                animation: slide-up 0.8s ease-out forwards;
+            }
+
+            /* Smooth scroll behavior */
+            html {
+                scroll-behavior: smooth;
+            }
+        `}</style>
     </Wrapper>
     
   );

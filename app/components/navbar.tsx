@@ -3,8 +3,8 @@ import Link from "next/link"
 export default function Navbar(currentPage: {currentPage: Number} = {currentPage: 1}){
     const getActiveClass = (page: number) => {
         return currentPage.currentPage === page 
-            ? "bg-[rgba(239,219,146,0.2)] px-4 py-3 rounded-full" 
-            : "hover:bg-[rgba(255,255,255,0.09)] px-4 py-3 rounded-full";
+            ? "bg-[rgba(239,219,146,0.2)] px-4 py-3 rounded-full font-jetbrains-mono" 
+            : "hover:bg-[rgba(255,255,255,0.09)] px-4 py-3 rounded-full font-jetbrains-mono";
     };
 
     return(
@@ -14,8 +14,9 @@ export default function Navbar(currentPage: {currentPage: Number} = {currentPage
                 <Link className={getActiveClass(1)} href="/">Home</Link>
                 <Link className={getActiveClass(2)} href="/events">Events</Link>
                 <Link className={getActiveClass(3)} href="/rules">Rules</Link>
-                <Link className={getActiveClass(4)} href="/gallery">Gallery</Link>
-                <Link className={getActiveClass(5)} href="/about">About</Link>
+                <Link className={getActiveClass(4)} href="/schedule">Schedule</Link>
+                <Link className={getActiveClass(5)} href="/gallery">Gallery</Link>
+                <Link className={getActiveClass(6)} href="/about">About</Link>
             </div>
         </div>
     )
