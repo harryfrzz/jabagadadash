@@ -1,3 +1,4 @@
+"use client";
 import Wrapper from "../components/wrapper";
 
 import CampusMap from "../components/mapView";
@@ -7,12 +8,12 @@ export default function AboutPage() {
     <Wrapper>
         <div className="min-h-screen bg-[#0a0a0a] px-8 py-16">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-center text-[#efdb92] text-5xl font-bold mb-20 tracking-tight">
+        <h1 className="text-center text-[#efdb92] text-5xl font-bold mb-20 tracking-tight animate-fade-in">
           About
         </h1>
 
         {/* About Section */}
-        <section className="mb-24">
+        <section className="mb-24 animate-slide-up" style={{ animationDelay: '0.1s' }}>
           <p className="text-gray-300 text-xl leading-loose text-center max-w-4xl mx-auto">
             <span className="text-[#efdb92] font-semibold text-2xl">Jabagadadash 6.0</span>, the sixth edition of CVV's International Inter-University Mega Fest,
             celebrates innovation, intellect, management excellence, creativity, and human understanding.
@@ -27,7 +28,7 @@ export default function AboutPage() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#efdb92] to-transparent mb-24"></div>
 
         {/* Location Section */}
-        <section className="mb-24">
+        <section className="mb-24 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-[#efdb92] text-4xl font-bold mb-10 text-center">Location</h2>
           <div className="text-gray-300 text-lg leading-relaxed text-center space-y-1 mb-12">
             <p className="text-[#efdb92] font-semibold text-xl">Lalita Pratishthanam (LP) Campus</p>
@@ -46,7 +47,7 @@ export default function AboutPage() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#efdb92] to-transparent mb-24"></div>
 
         {/* Contact Us Section */}
-        <section className="mb-16">
+        <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.3s' }}>
           <h2 className="text-[#efdb92] text-4xl font-bold mb-16 text-center">Contact Us</h2>
           
           {/* Faculty Coordinators */}
@@ -215,6 +216,45 @@ export default function AboutPage() {
         </section>
       </div>
     </div>
+
+        {/* Animations */}
+        <style jsx>{`
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slide-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-fade-in {
+                animation: fade-in 1s ease-out forwards;
+            }
+
+            .animate-slide-up {
+                opacity: 0;
+                animation: slide-up 0.8s ease-out forwards;
+            }
+
+            /* Smooth scroll behavior */
+            html {
+                scroll-behavior: smooth;
+            }
+        `}</style>
     </Wrapper>
     
   );

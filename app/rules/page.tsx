@@ -8,7 +8,7 @@ export default function Rules(){
             <div className="max-w-4xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-20 animate-fade-in">
-                    <h1 className="text-[#efdb92] text-6xl font-bold mb-6 tracking-tight">
+                    <h1 className="text-[#efdb92] text-6xl font-bold mb-6 tracking-tight font-cormorant">
                         Rules & Regulations
                     </h1>
                     <p className="text-gray-400 text-lg">
@@ -16,15 +16,12 @@ export default function Rules(){
                     </p>
                 </div>
 
-                {/* Divider */}
-                <div className="w-32 h-px bg-gradient-to-r from-transparent via-[#efdb92] to-transparent mx-auto mb-16"></div>
-
                 {/* Rules Content - Flowing Layout */}
                 <div className="space-y-12 text-gray-300">
                     
                     {/* Registration & Eligibility */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Registration & Eligibility
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -37,7 +34,7 @@ export default function Rules(){
 
                     {/* Event Dates & Venue */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Event Dates & Venue
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -49,7 +46,7 @@ export default function Rules(){
 
                     {/* Accommodation & Transportation */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Accommodation & Transportation
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -62,7 +59,7 @@ export default function Rules(){
 
                     {/* Event Rules & Participation */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Event Rules & Participation
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -74,7 +71,7 @@ export default function Rules(){
 
                     {/* Submissions & Event Conduct */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.5s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Submissions & Event Conduct
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -87,7 +84,7 @@ export default function Rules(){
 
                     {/* Code of Conduct */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Code of Conduct
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -100,7 +97,7 @@ export default function Rules(){
 
                     {/* Communication & Queries */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.7s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center font-cormorant">
                             Communication & Queries
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -112,7 +109,7 @@ export default function Rules(){
 
                     {/* Final Authority */}
                     <section className="animate-slide-up" style={{ animationDelay: '0.8s' }}>
-                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-3 border-b border-[rgba(239,219,146,0.2)], text-center">
+                        <h2 className="text-[#efdb92] text-3xl font-bold mb-6 pb-5 border-b border-[rgba(239,219,146,0.2)], text-center">
                             Final Authority
                         </h2>
                         <div className="space-y-4 leading-relaxed text-lg">
@@ -126,7 +123,7 @@ export default function Rules(){
                 {/* Footer Note */}
                 <div className="mt-20 p-8 bg-[rgba(239,219,146,0.05)] border border-[rgba(239,219,146,0.3)] rounded-lg animate-fade-in">
                     <p className="text-gray-300 text-center text-lg leading-relaxed">
-                        <span className="text-[#efdb92] font-bold text-xl, text-center">Important Notice:</span><br/>
+                        <span className="text-[#efdb92] font-bold text-xl, text-center ">Important Notice:</span><br/>
                         All participants must read and agree to these rules before registration. Non-compliance may result in disqualification without refund.
                     </p>
                 </div>
