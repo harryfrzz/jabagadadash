@@ -32,7 +32,7 @@ export default function EventCard({ event }: EventCardProps) {
     <>
       <div 
         onClick={() => setIsModalOpen(true)}
-        className="relative bg-[#151515] border border-[#2a2a2a] rounded-xl p-6 hover:border-[#efdb92] hover:shadow-[0_0_20px_rgba(239,219,146,0.15)] hover:scale-105 transition-all duration-300 aspect-square flex flex-col justify-end cursor-pointer overflow-hidden group"
+        className="relative bg-[#151515] border border-[#2a2a2a] rounded-xl p-4 sm:p-5 md:p-6 hover:border-[#efdb92] hover:shadow-[0_0_20px_rgba(239,219,146,0.15)] hover:scale-105 transition-all duration-300 aspect-square flex flex-col justify-end cursor-pointer overflow-hidden group"
       >
         {/* Background logo image */}
         <div 
@@ -48,16 +48,16 @@ export default function EventCard({ event }: EventCardProps) {
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-transparent to-[#0a0a0a]/95 z-[1]" />
         
-        <div className="relative z-[2] flex gap-3">
+        <div className="relative z-[2] flex flex-col sm:flex-row gap-2 sm:gap-3">
           {/* Event Details */}
-          <div className="flex flex-col gap-3 flex-1">
-            <h2 className="text-[#efdb92] text-2xl font-bold group-hover:text-[#f5e8b8] transition-colors duration-300">{event.title}</h2>
+          <div className="flex flex-col gap-2 sm:gap-3 flex-1">
+            <h2 className="text-[#efdb92] text-lg sm:text-xl md:text-2xl font-bold group-hover:text-[#f5e8b8] transition-colors duration-300">{event.title}</h2>
             
-            <div className="flex flex-col gap-1.5 text-sm text-gray-400">
-              <span className="flex items-center gap-2">
+            <div className="flex flex-col gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-400">
+              <span className="flex items-center gap-1.5 sm:gap-2">
                 <span className="text-[#efdb92]">📍</span> {event.location}
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-1.5 sm:gap-2">
                 <span className="text-[#efdb92]">📅</span> {new Date(event.date).toLocaleDateString('en-US', { 
                   month: 'long', 
                   day: 'numeric', 
@@ -71,7 +71,7 @@ export default function EventCard({ event }: EventCardProps) {
           <div className="flex items-end">
             <button
               onClick={handleRegisterClick}
-              className="bg-[#efdb92] text-black px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-[#f5e8b8] hover:shadow-[0_0_15px_rgba(239,219,146,0.4)] transition-all duration-300"
+              className="bg-[#efdb92] text-black px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold hover:bg-[#f5e8b8] hover:shadow-[0_0_15px_rgba(239,219,146,0.4)] transition-all duration-300 w-full sm:w-auto"
             >
               Register
             </button>
@@ -90,10 +90,10 @@ export default function EventCard({ event }: EventCardProps) {
             className="bg-[#0f0f0f] border border-[#2a2a2a] shadow-[0_0_60px_rgba(239,219,146,0.1)] rounded-xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col animate-slideUp"
           >
             {/* Header */}
-            <div className="sticky top-0 bg-[#0f0f0f]/95 backdrop-blur-md border-b border-[#2a2a2a] p-6 flex justify-between items-start">
+            <div className="sticky top-0 bg-[#0f0f0f]/95 backdrop-blur-md border-b border-[#2a2a2a] p-4 sm:p-5 md:p-6 flex justify-between items-start">
               <div>
-                <h2 className="text-[#efdb92] text-3xl font-bold mb-3">{event.title}</h2>
-                <div className="flex gap-6 text-sm text-gray-500">
+                <h2 className="text-[#efdb92] text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3">{event.title}</h2>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-xs sm:text-sm text-gray-500">
                   <span className="flex items-center gap-2">
                     <span className="text-[#efdb92]">📅</span> {new Date(event.date).toLocaleDateString('en-US', { 
                       month: 'long', 
@@ -115,10 +115,10 @@ export default function EventCard({ event }: EventCardProps) {
             </div>
 
             {/* Content */}
-            <div className="p-6 space-y-6 overflow-y-auto">
+            <div className="p-4 sm:p-5 md:p-6 space-y-4 sm:space-y-5 md:space-y-6 overflow-y-auto">
               {/* Description */}
               <div>
-                <h3 className="text-[#efdb92] text-xl font-semibold mb-3">Description</h3>
+                <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Description</h3>
                 <p className="text-gray-400 leading-relaxed">
                   {event.description}
                 </p>
@@ -127,7 +127,7 @@ export default function EventCard({ event }: EventCardProps) {
               {/* Registration Fee */}
               {event.registrationFee && (
                 <div>
-                  <h3 className="text-[#efdb92] text-xl font-semibold mb-3">Registration Fee</h3>
+                  <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Registration Fee</h3>
                   <div className="bg-[#151515] border border-[#2a2a2a] rounded-lg p-4">
                     <p className="text-gray-300 text-lg font-semibold">{event.registrationFee}</p>
                   </div>
@@ -137,7 +137,7 @@ export default function EventCard({ event }: EventCardProps) {
               {/* Cash Prize */}
               {event.cashPrize && (
                 <div>
-                  <h3 className="text-[#efdb92] text-xl font-semibold mb-3">Cash Prize</h3>
+                  <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Cash Prize</h3>
                   <div className="bg-[#151515] border border-[#2a2a2a] rounded-lg p-4">
                     {event.cashPrize.type === 'single' && (
                       <p className="text-gray-300 text-lg font-semibold">
@@ -170,7 +170,7 @@ export default function EventCard({ event }: EventCardProps) {
 
               {/* Event Guidelines */}
               <div>
-                <h3 className="text-[#efdb92] text-xl font-semibold mb-3">Event Guidelines</h3>
+                <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Event Guidelines</h3>
                 <p className="text-gray-400 leading-relaxed whitespace-pre-line">
                   {event.guidelines}
                 </p>
@@ -179,7 +179,7 @@ export default function EventCard({ event }: EventCardProps) {
               {/* Event Coordinator */}
               {event.coordinator && (
                 <div>
-                  <h3 className="text-[#efdb92] text-xl font-semibold mb-3">Event Coordinator{event.coordinator.name.includes(',') ? 's' : ''}</h3>
+                  <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Event Coordinator{event.coordinator.name.includes(',') ? 's' : ''}</h3>
                   <div className="bg-[#151515] border border-[#2a2a2a] rounded-lg p-4 space-y-3">
                     {(() => {
                       const names = event.coordinator.name.split(',').map(n => n.trim());
@@ -204,12 +204,12 @@ export default function EventCard({ event }: EventCardProps) {
               )}
 
               {/* Registration Button */}
-              <div className="pt-4">
+              <div className="pt-2 sm:pt-4">
                 <a 
                   href={event.registrationLink || '#'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block w-full text-center bg-[#efdb92] text-black px-6 py-4 rounded-lg font-semibold hover:bg-[#f5e8b8] hover:shadow-[0_0_20px_rgba(239,219,146,0.3)] transition-all duration-300"
+                  className="inline-block w-full text-center bg-[#efdb92] text-black px-4 sm:px-6 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-[#f5e8b8] hover:shadow-[0_0_20px_rgba(239,219,146,0.3)] transition-all duration-300"
                 >
                   Register for Event →
                 </a>
