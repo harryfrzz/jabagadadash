@@ -1,4 +1,3 @@
-import Navbar from "./components/navbar";
 import LandingLogo from "../public/logo.png"
 import Image from "next/image";
 import LightRays from "./components/LightRays"
@@ -14,9 +13,17 @@ export default function Home() {
             <Image src={LandingLogo} className="w-180" alt="landing-logo"/>
             <Countdown/>
           </div>
-          <div className="w-full h-screen bg-black">
-
+          <div className="w-full h-screen bg-black flex flex-row">
+            <div className="flex w-full h-screen justify-center">
+                <h1 className="text-[#efdb92] text-6xl">Sponsers</h1>
+            </div>
           </div>
+
+          <div className="w-full h-300 bg-black flex justify-center p-10">
+            <h1 className="text-[#efdb92] text-6xl">Updates</h1>
+          </div>
+
+
         </div>
     </Wrapper>
     </>
