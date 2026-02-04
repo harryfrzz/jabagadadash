@@ -1,6 +1,6 @@
 "use client";
 import Wrapper from "../components/wrapper";
-
+import { Train, Bus } from "lucide-react";
 import CampusMap from "../components/mapView";
 
 export default function AboutPage() {
@@ -38,8 +38,73 @@ export default function AboutPage() {
           </div>
           
           {/* Placeholder for Map */}
-          <div className="border border-[rgba(239,219,146,0.3)] rounded-lg p-16 flex items-center justify-center">
+          <div className="border border-[rgba(239,219,146,0.3)] rounded-lg p-16 flex items-center justify-center mb-16">
             <CampusMap></CampusMap>
+          </div>
+
+          {/* Route Maps */}
+          <div className="mt-16">
+            <h3 className="text-[#efdb92] text-3xl font-bold mb-12 text-center font-jetbrains-mono">Route Map to Campus</h3>
+            
+            <div className="space-y-8">
+              {/* From Ernakulam South Railway Station */}
+              <div className="bg-[rgba(239,219,146,0.05)] border border-[rgba(239,219,146,0.3)] rounded-lg p-6">
+                <h4 className="text-[#efdb92] text-xl font-semibold mb-4 flex items-center gap-2">
+                  <Train className="w-6 h-6" />
+                  From Ernakulam South Railway Station (Ernakulam Junction) /
+                </h4>
+                <h4 className="text-[#efdb92] text-xl font-semibold mb-4 flex items-center gap-2 ml-8">
+                     Ernakulam North Railway Station (Ernakulam Town)
+                </h4>
+                <ol className="text-gray-300 space-y-3 leading-relaxed ml-8">
+                  <li className="list-decimal">From the Railway Station, take <span className="text-[#efdb92] font-medium">Kochi Metro / city bus</span> to <span className="text-[#efdb92] font-medium">Vyttila</span>.</li>
+                  <li className="list-decimal">Get down at <span className="text-[#efdb92] font-medium">Vyttila Hub / Vyttila Metro Station</span> (Vyttila Mobility Hub Bus Terminal).</li>
+                  <li className="list-decimal">From Vyttila Hub, board a <span className="text-[#efdb92] font-medium">bus towards Piravom / Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Get down at <span className="text-[#efdb92] font-medium">Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Take an <span className="text-[#efdb92] font-medium">auto-rickshaw</span> from Onakoor Bridge to <span className="text-[#efdb92] font-medium">Chinmaya Vishwa Vidyapeeth Global Campus</span>.</li>
+                </ol>
+              </div>
+
+              {/* From Vyttila Bus Stand */}
+              <div className="bg-[rgba(239,219,146,0.05)] border border-[rgba(239,219,146,0.3)] rounded-lg p-6">
+                <h4 className="text-[#efdb92] text-xl font-semibold mb-4 flex items-center gap-2">
+                  <Bus className="w-6 h-6" />
+                  From Vyttila Bus Stand (Vyttila Mobility Hub)
+                </h4>
+                <ol className="text-gray-300 space-y-3 leading-relaxed ml-8">
+                  <li className="list-decimal">From <span className="text-[#efdb92] font-medium">Vyttila Bus Stand</span>, board a <span className="text-[#efdb92] font-medium">bus heading towards Piravom / Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Get down at <span className="text-[#efdb92] font-medium">Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Take an <span className="text-[#efdb92] font-medium">auto-rickshaw</span> from Onakoor Bridge to <span className="text-[#efdb92] font-medium">Chinmaya Vishwa Vidyapeeth Global Campus</span>.</li>
+                </ol>
+              </div>
+
+              {/* From Piravom Road Railway Station */}
+              <div className="bg-[rgba(239,219,146,0.05)] border border-[rgba(239,219,146,0.3)] rounded-lg p-6">
+                <h4 className="text-[#efdb92] text-xl font-semibold mb-4 flex items-center gap-2">
+                  <Train className="w-6 h-6" />
+                  From Piravom Road Railway Station
+                </h4>
+                <ol className="text-gray-300 space-y-3 leading-relaxed ml-8">
+                  <li className="list-decimal">From <span className="text-[#efdb92] font-medium">Piravom Road Railway Station</span>, take an <span className="text-[#efdb92] font-medium">auto-rickshaw or local bus</span> to <span className="text-[#efdb92] font-medium">Piravom / Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Get down at <span className="text-[#efdb92] font-medium">Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Take an <span className="text-[#efdb92] font-medium">auto-rickshaw</span> from Onakoor Bridge to <span className="text-[#efdb92] font-medium">Chinmaya Vishwa Vidyapeeth Global Campus</span>.</li>
+                </ol>
+              </div>
+
+
+              <div className="bg-[rgba(239,219,146,0.05)] border border-[rgba(239,219,146,0.3)] rounded-lg p-6">
+                <h4 className="text-[#efdb92] text-xl font-semibold mb-4 flex items-center gap-2">
+                  <Train className="w-6 h-6" />
+                  From Muvattupuzha / Koothatukulam Bus Stand
+                </h4>
+                <ol className="text-gray-300 space-y-3 leading-relaxed ml-8">
+                  <li className="list-decimal">From Muvattupuzha Bus Stand, board a bus towards<span className="text-[#efdb92] font-medium"> Piravom</span>.</li>
+                  <li className="list-decimal">Get down at <span className="text-[#efdb92] font-medium">Onakoor Bridge</span>.</li>
+                  <li className="list-decimal">Take an <span className="text-[#efdb92] font-medium">auto-rickshaw</span> from Onakoor Bridge to <span className="text-[#efdb92] font-medium">Chinmaya Vishwa Vidyapeeth Global Campus</span>.</li>
+                </ol>
+              </div>
+
+            </div>
           </div>
         </section>
 
