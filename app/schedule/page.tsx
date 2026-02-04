@@ -12,7 +12,7 @@ export default function Schedule(){
 
                     {scheduleData.fests.map((fest, festIndex) => (
                         <section key={festIndex} className="mb-20">
-                            <h2 className="text-[#efdb92] text-4xl font-semibold mb-10 font-cormorant text-start">{fest.name}</h2>
+                            <h2 className="text-[#efdb92] text-2xl font-semibold mb-10 font-jetbrains-mono text-start">{fest.name}</h2>
                             <div className="overflow-x-auto rounded-2xl border border-[rgba(239,219,146,0.2)] bg-[rgba(239,219,146,0.02)]">
                                 <table className="w-full border-collapse">
                                     <thead>
