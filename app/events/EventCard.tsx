@@ -128,17 +128,17 @@ export default function EventCard({ event }: EventCardProps) {
               </div>
 
               {/* Registration Fee */}
-              {/*{event.registrationFee && (
+              {event.registrationFee && (
                 <div>
                   <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Registration Fee</h3>
                   <div className="bg-[#151515] border border-[#2a2a2a] rounded-lg p-4">
                     <p className="text-gray-300 text-lg font-semibold">{event.registrationFee}</p>
                   </div>
                 </div>
-              )} 
+              )}
 
               {/* Cash Prize */}
-              {/*
+              
               {event.cashPrize && (
                 <div>
                   <h3 className="text-[#efdb92] text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Cash Prize</h3>
@@ -171,7 +171,6 @@ export default function EventCard({ event }: EventCardProps) {
                   </div>
                 </div>
               )}
-              */}
 
               {/* Event Guidelines */}
               {/*<div>
