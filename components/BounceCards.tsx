@@ -3,6 +3,18 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import './BounceCards.css';
 
+interface BounceCardsProps {
+  className?: string;
+  images?: string[];
+  containerHeight?: number;
+  animationDelay?: number;
+  animationStagger?: number;
+  easeType?: string;
+  transformStyles?: string[];
+  enableHover?: boolean;
+  onCardClick?: ((index: number) => void) | null;
+}
+
 export default function BounceCards({
   className = '',
   images = [],
@@ -19,10 +31,10 @@ export default function BounceCards({
   ],
   enableHover = true,
   onCardClick = null
-}) {
-  const containerRef = useRef(null);
+}: BounceCardsProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const [activeCardIndex, setActiveCardIndex] = useState(null);
+  const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
 
   useEffect(() => {
     // Detect if device is mobile/touch
@@ -50,7 +62,7 @@ export default function BounceCards({
     return () => ctx.revert();
   }, [animationStagger, easeType, animationDelay]);
 
-  const getNoRotationTransform = transformStr => {
+  const getNoRotationTransform = (transformStr: string): string => {
     const hasRotate = /rotate\([\s\S]*?\)/.test(transformStr);
     if (hasRotate) {
       return transformStr.replace(/rotate\([\s\S]*?\)/, 'rotate(0deg)');
@@ -61,7 +73,7 @@ export default function BounceCards({
     }
   };
 
-  const getPushedTransform = (baseTransform, offsetX) => {
+  const getPushedTransform = (baseTransform: string, offsetX: number): string => {
     const translateRegex = /translate\(([-0-9.]+)px\)/;
     const match = baseTransform.match(translateRegex);
     if (match) {
@@ -73,7 +85,7 @@ export default function BounceCards({
     }
   };
 
-  const pushSiblings = hoveredIdx => {
+  const pushSiblings = (hoveredIdx: number) => {
     if (!containerRef.current) return;
 
     const q = gsap.utils.selector(containerRef);
@@ -128,7 +140,7 @@ export default function BounceCards({
     });
   };
 
-  const handleCardClick = (idx) => {
+  const handleCardClick = (idx: number) => {
     if (!onCardClick) return;
 
     // On mobile, require two taps: first for animation, second for popup
@@ -152,8 +164,8 @@ export default function BounceCards({
   useEffect(() => {
     if (!isMobile) return;
     
-    const handleClickOutside = (e) => {
-      if (containerRef.current && !containerRef.current.contains(e.target)) {
+    const handleClickOutside = (e: TouchEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setActiveCardIndex(null);
         resetSiblings();
       }
